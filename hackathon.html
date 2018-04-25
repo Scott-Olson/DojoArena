@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Game</title>
+      <link rel="stylesheet" type="text/css" href="hackathon.css">
+      <meta charset="UTF-8">
+      <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+              $(document).ready(function(){
+                    $('#beachButton').hover(function(){
+                         $('#wrapper').css("background-image","url(beach.jpg)");
+                            })
+                    
+                    $('#planetButton').hover(function(){
+                         $('#wrapper').css("background-image","url(earth.jpg)");
+                            })
+                    $('#dojoButton').hover(function(){
+                         $('#wrapper').css("background-image","url(dojo.jpg)");
+                            })
+
+                    $('#forestButton').hover(function(){
+                         $('#wrapper').css("background-image","url(forest.jpg)");
+                            })
+
+                    $('#matrixButton').hover(function(){
+                         $('#wrapper').css("background-image","url(matrix.jpg)");
+                            })
+
+                    $('#snowButton').hover(function(){
+                         $('#wrapper').css("background-image","url(snow.jpg)");
+                            })
+
+                    $('button').click(function(){
+                        $('.pane1').hide();
+                        $('.pane2').css('display','inline-block');
+                            })
+                      
+                    $('#donny1').click(function(){
+                        $('#playerOne').css('display','inline-block');
+                        $('#playerOne').css("background-image", "url(donny.png)");
+                    })
+
+                    $('#leo1').click(function(){
+                        $('#playerOne').css('display','inline-block');
+                        $('#playerOne').css("background-image", "url(leo.png)");
+                    })
+
+                    $('#mikey1').click(function(){
+                        $('#playerOne').css('display','inline-block');
+                        $('#playerOne').css("background-image", "url(mikey.png)");
+                    })
+
+                    $('#raphael1').click(function(){
+                        $('#playerOne').css('display','inline-block');
+                        $('#playerOne').css("background-image", "url(raphael.png)");
+                    })
+
+                    $('#donny2').click(function(){
+                        $('#playerTwo').css('display','inline-block');
+                        $('#playerTwo').css("background-image", "url(donny.png)");
+                    })
+
+                    $('#leo2').click(function(){
+                        $('#playerTwo').css('display','inline-block');
+                        $('#playerTwo').css("background-image", "url(leo.png)");
+                    })
+
+                    $('#mikey2').click(function(){
+                        $('#playerTwo').css('display','inline-block');
+                        $('#playerTwo').css("background-image", "url(mikey.png)");
+                    })
+
+                    $('#raphael2').click(function(){
+                        $('#playerTwo').css('display','inline-block');
+                        $('#playerTwo').css("background-image", "url(raphael.png)");
+                    })
+            });
+
+        </script>
+
+   </head>
+
+   <body>
+        <div id="wrapper">
+
+            <div id="mainbody">
+                <h1>Select Arena</h1>
+                <div id="selectionPane">
+                    <div class="pane1">
+                        <div><button id="beachButton">beach</button></div>
+                        <div><button id="planetButton">planet</button></div>
+                        <div><button id="dojoButton">dojo</button></div>
+                        <div><button id="forestButton">forest</button></div>
+                        <div><button id="matrixButton">matrix</button></div>
+                        <div><button id="snowButton">snow</button></div>
+                    </div>
+                    <div class="pane2">
+                        <div class="playerOneSelect">
+                            <h4>Select Player One</h4>
+                            <div><button id="donny1">Donny</button></div>
+                            <div><button id="leo1">Leo</button></div>
+                            <div><button id="mikey1">Mikey</button></div>
+                            <div><button id="raphael1">Raphael</button></div>
+                        </div>
+                        <div class="playerTwoSelect">
+                            <h4>Select Player Two</h4>
+                            <div><button id="donny2">Donny</button></div>
+                            <div><button id="leo2">Leo</button></div>
+                            <div><button id="mikey2">Mikey</button></div>
+                            <div><button id="raphael2">Raphael</button></div>
+                        </div>                        
+                    
+                        </div>
+                        
+                </div>
+            </div>
+            <div id='playerArea'>
+                <div id='playerOne'></div>
+                <div id='playerTwo'></div>
+            </div>
+        </div>
+
+    
+    </body>
+</html>
